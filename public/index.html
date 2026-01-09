@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANN404 Remover | AI Background Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <aside id="sidebar">
+        <div class="sidebar-header">
+            <h3>SANN404<span class="dot">.</span></h3>
+            <button id="close-sidebar" class="icon-btn"><i class="ri-close-line"></i></button>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#"><i class="ri-magic-line"></i> Remover Tool</a></li>
+                <li><a href="#how-to"><i class="ri-book-open-line"></i> Panduan</a></li>
+                <li><a href="#about"><i class="ri-information-line"></i> Tentang</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Version 1.0.0</p>
+        </div>
+    </aside>
+
+    <div id="overlay"></div>
+
+    <main>
+        <header>
+            <button id="open-sidebar" class="icon-btn"><i class="ri-menu-2-line"></i></button>
+            <div class="logo-mobile">SANN404</div>
+            <a href="https://sann404-forum.com" class="profile-link">Dev Profile</a>
+        </header>
+
+        <div class="container">
+            <section class="hero">
+                <span class="badge">AI Powered</span>
+                <h1>Hapus Background <br>Dalam Sekejap.</h1>
+                <p>Alat profesional untuk menghapus latar belakang gambar secara otomatis menggunakan teknologi AI terbaru. Gratis dan mudah digunakan.</p>
+            </section>
+
+            <section class="tool-card">
+                <div class="input-group">
+                    <label for="urlInput">Masukkan URL Gambar</label>
+                    <div class="input-wrapper">
+                        <i class="ri-link"></i>
+                        <input type="url" id="urlInput" placeholder="https://contoh.com/gambar.jpg">
+                    </div>
+                    <button id="processBtn">
+                        <span id="btnText">Hapus Background</span>
+                        <div class="loader" id="btnLoader"></div>
+                    </button>
+                </div>
+
+                <div id="resultArea" class="result-area hidden">
+                    <div class="result-header">
+                        <h4>Hasil :</h4>
+                        <button id="downloadBtn" class="download-btn"><i class="ri-download-line"></i> Unduh</button>
+                    </div>
+                    <div class="image-container">
+                        <img id="resultImage" src="" alt="Hasil remove bg">
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-to" class="info-section">
+                <h2>Cara Penggunaan</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon">1</div>
+                        <h3>Salin URL</h3>
+                        <p>Cari gambar di internet, klik kanan dan pilih "Copy Image Link".</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">2</div>
+                        <h3>Tempel & Proses</h3>
+                        <p>Tempel URL ke kolom input di atas dan tekan tombol Hitam.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">3</div>
+                        <h3>Unduh</h3>
+                        <p>Tunggu sejenak, AI akan memisahkan objek, lalu unduh hasilnya.</p>
+                    </div>
+                </div>
+
+                <div class="simulation">
+                    <h3>Simulasi Hasil</h3>
+                    <div class="compare-container">
+                        <div class="comp-box">
+                            <span>Sebelum</span>
+                            <div class="dummy-img original">Original Photo</div>
+                        </div>
+                        <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+                        <div class="comp-box">
+                            <span>Sesudah</span>
+                            <div class="dummy-img processed">Transparent</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <h2>Tentang Web Ini</h2>
+                <p>Web ini adalah implementasi teknologi <strong>Computer Vision</strong> yang dikemas dalam antarmuka SaaS modern. Dibangun menggunakan arsitektur Serverless untuk performa maksimal dan latensi rendah.</p>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 SANN404 FORUM. All rights reserved.</p>
+                <p class="credits">Built with NodeJS & Vercel</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
